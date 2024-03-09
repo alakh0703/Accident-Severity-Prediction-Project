@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Info and Feedback</title>
+  </head>
+  <style>
+    * {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    html {
+        background-color: rgb(151, 153, 116);
+      }
+      .logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #navbarDesign {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+      }
+      .mainNav {
+        background: #6c6fba;
+        height: 80px;
+        width: 90%;
+        margin-left: 76px;
+        border-radius: 25px;
+      }
+            .navbar {
+        position: sticky;
+      }
+      #mainNav {
+        overflow: hidden;
+        width: 90%;
+      }
+      #navbarDesign {
+        float: right;
+        margin-right: 20px;
+      }
+      #navbarDesign li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      #navbarDesign li a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-size: 17px;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #navbarDesign li a.active,
+      #navbarDesign li a:hover {
+        background: black;
+        transition: 0.5s;
+      }
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      html {
+        background-color: rgb(151, 153, 116);
+      }
+    .feedback {
+      position: absolute;
+      bottom: 400px;
+      right: 700px;
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+      border: 5px solid black;
+    }
+
+    .feedback .btn-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .feedback .btn-yes,
+    .feedback .btn-no {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .feedback .btn-yes {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .feedback .btn-no {
+      background-color: #e6e6e6;
+      color: #333;
+    }
+
+    .feedback .btn-no:hover {
+      animation: move-away 1s forwards;
+    }
+
+    @keyframes move-away {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-500px);
+      }
+      100% {
+        transform: translateX(-100px);
+      }
+    }
+    .names {
+      text-align: left;
+      margin-left: 530px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-left: 700px;
+      background-color: lightgreen;
+      color: black;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: olive;
+    }
+    .group-info {
+    border: 8px solid black; 
+    /* padding: 20px;  */
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: whitesmoke;
+  }
+  
+  h1 {
+    font-size: 28px; 
+  }
+  
+  .names {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    margin-right: 250px;
+    margin-bottom: 20px;
+    margin-left: 330px;
+
+  }
+  
+  h2 {
+    font-size: 20px; 
+    margin-bottom: 5px; 
+  }
+  </style>
+  <body>
+    <div class="navbar">
+      <nav class="mainNav">
+        <label class="logo" style="margin-right: 200px">KSI Dataset - Classifier</label>
+        <ul id="navbarDesign">
+          <li><a href="./">Home</a></li>
+          <li><a href="{{ url_for('view_graphs') }}">Graphs</a></li>
+          <li><a href="">Report</a></li>
+          <li><a href="{{ url_for('view_feedback') }}">Group Info and Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 style="text-align: center; margin-top: 50px">Feedback Page:</h1>
+    <div class="feedback">
+      <h2 style="text-align: center">Feedback</h2>
+      <h3 style="text-align: center">How did you find our website?</h3>
+      <div class="btn-container">
+        <button class="btn-yes" onclick="show()">Awesome</button>
+        <button class="btn-no">It's Ok</button>
+      </div>
+    </div>
+    <div class="group-info">
+      <h1 style="text-align: center; margin-top: 350px">Group Information:</h1>
+      <div class="names">
+        <h2>Name: Alakh Patel, Student ID: 301232383</h2>
+        <h2>Name: Dhrumit Patel, Student ID: 301171388</h2>
+        <h2>Name: Gitansh Mittal, Student ID: 301200517</h2>
+        <h2>Name: Yagnam Sukhadia, Student ID: 301200518</h2>
+      </div>
+    </div>
+  </body>
+  <script>
+    const feedbackDiv = document.querySelector(".feedback");
+    const btnNo = document.querySelector(".btn-no");
+
+    btnNo.addEventListener("mouseenter", () => {
+      feedbackDiv.classList.add("move-away");
+    });
+
+    btnNo.addEventListener("mouseleave", () => {
+      feedbackDiv.classList.remove("move-away");
+    });
+
+    function show() {
+      alert("Thank you for your feedback!");
+    }
+  </script>
+</html>

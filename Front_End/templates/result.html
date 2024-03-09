@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+  </head>
+  <style>
+      html {
+        background-color: rgb(151, 153, 116);
+      }
+      .logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #navbarDesign {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+      }
+      .mainNav {
+        background: #6c6fba;
+        height: 80px;
+        width: 90%;
+        margin-left: 76px;
+        border-radius: 25px;
+      }
+            .navbar {
+        position: sticky;
+      }
+      #mainNav {
+        overflow: hidden;
+        width: 90%;
+      }
+      #navbarDesign {
+        float: right;
+        margin-right: 20px;
+      }
+      #navbarDesign li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      #navbarDesign li a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-size: 17px;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #navbarDesign li a.active,
+      #navbarDesign li a:hover {
+        background: black;
+        transition: 0.5s;
+      }
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      html {
+        background-color: rgb(151, 153, 116);
+      }
+
+    .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 50px;
+      margin-left: 600px;
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-left: 650px;
+      background-color: lightgreen;
+      color: black;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: olive;
+    }
+
+    #result{
+      margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    }
+
+
+  </style> 
+  <body>
+    <div class="navbar">
+      <nav class="mainNav">
+        <label class="logo" style="margin-right: 200px">KSI Dataset - Classifier</label>
+        <ul id="navbarDesign">
+          <li><a href="./">Home</a></li>
+          <li><a href="{{ url_for('view_graphs') }}">Graphs</a></li>
+          <li><a href="{{url_for('view_report')  }}">Report</a></li>
+          <li><a href="{{ url_for('view_feedback') }}">Group Info and Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="animate-charcter">Prediction Result</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="result">
+      <h1>Result for best model:</h1>
+      {% if result_prediction == 0 %}
+      <p>Non-Fatal</p>
+      {% else %}
+      <p>Fatal</p>
+      {% endif %}
+      <h1>MODEL:</h1>
+      <p>{{model}}</p>
+      <h1><b>MODEL PREDICTION</b></h1>
+      {% if model_prediction == 0 %}
+        <p>Non-Fatal</p>
+      {% else %}
+        <p>Fatal</p>
+      {% endif %}
+    </div>
+    <br /> 
+    <!-- <a href="{{ url_for('home') }}" class="btn">Back to Home</a> -->
+  </body>
+</html>

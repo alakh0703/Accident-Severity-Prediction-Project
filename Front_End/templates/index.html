@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <title>KSI Dataset - Model Prediction</title>
+    <style>
+      html {
+        background-color: rgb(151, 153, 116);
+      }
+      #navbarDesign {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+      }
+      .mainNav {
+        background: #6c6fba;
+        height: 80px;
+        width: 90%;
+        margin-left: 76px;
+        border-radius: 25px;
+      }
+
+      .logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .navbar {
+        position: sticky;
+      }
+      #mainNav {
+        overflow: hidden;
+        width: 90%;
+      }
+      #navbarDesign {
+        float: right;
+        margin-right: 20px;
+      }
+      #navbarDesign li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      #navbarDesign li a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-size: 17px;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #navbarDesign li a.active,
+      #navbarDesign li a:hover {
+        background: black;
+        transition: 0.5s;
+      }
+
+      #mainForm {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: whitesmoke;
+      }
+      #mainForm label, #modelSelected {
+        display: inline-block;
+        width: 400px;
+        text-align: right;
+        font-size: 20px;
+        margin-left: -80px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #time,
+      #road_class,
+      #district,
+      #loccoord,
+      #traffctl,
+      #visibility,
+      #light,
+      #rdsfcond,
+      #invage,
+      #injury,
+      #drivact,
+      #drivcond,
+      #pedestrian,
+      #cyclist,
+      #automobile,
+      #motorcycle,
+      #truck,
+      #trsn_city_veh,
+      #emerg_veh,
+      #passenger,
+      #speeding,
+      #ag_driv,
+      #redlight,
+      #alcohol,
+      #disability {
+        width: 400px;
+        height: 30px;
+        margin-left: 60px;
+      }
+      #predict {
+        padding: 9px 50px;
+        font-size: medium;
+        font-weight: bold;
+        background-color: lightgreen;
+        margin-left: 385px;
+        border-radius: 55px;
+      }
+      #reset {
+        padding: 9px 50px;
+        font-size: medium;
+        font-weight: bold;
+        background-color: rgb(69, 200, 200);
+        margin-left: 50px;
+        border-radius: 55px;
+      }
+      #footer {
+        background-color: white;
+        width: 95%;
+        height: 40px;
+        margin-left: 40px;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 11px;
+        font-size: large;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        border-radius: 25px;
+        border: 3px solid black;
+      }
+
+      #logo1 {
+        position: absolute;
+        top: 520px;
+        right: 200px;
+        height: 80px;
+        width: 255px;
+        height: 270px;
+        transition: 0.3s;
+      }
+      #logo2 {
+        position: absolute;
+        top: 900px;
+        right: 200px;
+        height: 80px;
+        width: 255px;
+        height: 270px;
+        transition: 0.3s;
+      }
+      #logo3 {
+        position: absolute;
+        top: 1300px;
+        right: 200px;
+        height: 80px;
+        width: 255px;
+        height: 270px;
+        transition: 0.3s;
+      }
+      .model_selection_buttons{
+        margin-left: 190px;
+      }
+      .model_selection_button{
+        padding: 19px 50px;
+        font-size: medium;
+        font-weight: bold;
+        background-color: lightgreen;
+        border-radius: 55px;
+      }
+      .model_selection_buttons{
+        margin-left: 60px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 3px solid black;
+        border-radius: 25px;
+        background-color: whitesmoke;
+      }
+      #model_selection_button_5, #model_selection_button_4, #model_selection_button_3, #model_selection_button_2{
+        margin-left: 50px;
+      }
+      h1{
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .model_selection_button{
+        cursor: pointer;
+        
+      }
+      #modelSelected {
+        margin-bottom: 15px;
+        font-weight: 900;
+        padding: 5px;
+        margin-left: 60px;
+        text-align: left;
+      }
+      .msb {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        font-size: 2rem;
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav class="mainNav">
+        <label class="logo" style="margin-right: 200px">KSI Dataset - Classifier</label>
+        <ul id="navbarDesign">
+          <li><a href="./">Home</a></li>
+          <li><a href="{{ url_for('view_graphs') }}">Graphs</a></li>
+          <li><a href="{{url_for('view_report')  }}">Report</a></li>
+          <li><a href="{{ url_for('view_feedback') }}">Group Info and Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br>
+    <div class="model_selection">
+      <h1 style="text-align: center">KSI Dataset - Classifier</h1> 
+      <h1 style="text-align: center">Select the model you want to use:</h1>
+      <div class="msb">
+        <div class="model_selection_buttons">
+          <button onclick="setSVM()" class="model_selection_button" id="model_selection_button_1">SVM Classifier</button>
+          <button onclick="setLR()" class="model_selection_button" id="model_selection_button_2">Logistic Regression</button>
+          <button onclick="setNN()" class="model_selection_button" id="model_selection_button_3">Neural Network</button>
+          <button onclick="setNB()" class="model_selection_button" id="model_selection_button_4">Naive Bayes</button>
+          <button onclick="setRF()" class="model_selection_button" id="model_selection_button_5">Random Forest</button>
+        </div></div>
+    </div>
+
+    <h1 style="text-align: center">Input Fields:</h1>
+    <form action="/result" method="POST" id="mainForm">
+      <label for="model">MODEL SELECTED: </label>
+      <input  name="model123" type="text" id="modelSelected" /> <br />
+
+      <label for="time">Time:</label>
+      <input  type="text" id="time" name="time" maxlength="4" required="required"/><br /><br />
+      
+      <label for="road_class">Road Class:</label>
+      <select id="road_class" name="road_class" required="required">
+        <option value="ROAD_CLASS_Arterial">Arterial</option>
+        <option value="ROAD_CLASS_Collector">Collector</option>
+        <option value="ROAD_CLASS_Expressway">Expressway</option>
+        <option value="ROAD_CLASS_Local">Local</option>
+        <option value="ROAD_CLASS_other">other</option>
+        <option value="Available">Not Available</option>
+        </select><br /><br />
+
+      <img src="{{ url_for('static', filename='images/Toronto_Fire.png') }}" alt="TP logo" id="logo1" />
+      <img src="{{ url_for('static', filename='images/Toronto_Medical.jpg') }}" alt="TM logo" id="logo2" />
+      <img src="{{ url_for('static', filename='images/Toronto_Police.png') }}" alt="TF logo" id="logo3" />
+      </div>
+
+      <label for="district">Select the district:</label>
+      <select id="district" name="district" required="required">
+        <option value="DISTRICT_North York">North York</option>
+    <option value="DISTRICT_Toronto and East York">Toronto and East York</option>
+    <option value="DISTRICT_Scarborough">Scarborough</option>
+    <option value="DISTRICT_Etobicoke York">Etobicoke York</option>
+    </select
+      ><br /><br />
+
+      <label for="loccoord">Location Coordinate:</label>
+      <select id="loccoord" name="loccoord" required="required">
+        <option value="LOCCOORD_at Intersection">At Intersection</option>
+        <option value="LOCCOORD_not at Intersection">Non Intersection</option>
+        </select
+      ><br /><br />
+
+      <label for="traffctl">Traffic Control:</label>
+      <select id="traffctl" name="traffctl" required="required">
+        <option value="TRAFFCTL_no control">No Control Present</option>
+        <option value="TRAFFCTL_control">Control Present</option>
+        </select
+      ><br /><br />
+
+      <label for="visibility">Select the visibility:</label>
+      <select id="visibility" name="visibility" required="required">
+        <option value="VISIBILITY_Clear">Clear</option>
+        <option value="VISIBILITY_Fog, Mist, Smoke, Dust">Fog, Mist, Smoke, Dust</option>
+        <option value="VISIBILITY_Rain">Rain</option>
+        <option value="VISIBILITY_Other">Other</option>
+        <option value="VISIBILITY_Snow">Snow</option>
+        <option value="VISIBILITY_Freezing Rain">Freezing Rain</option>
+        <option value="VISIBILITY_Drifting Snow">Drifting Snow</option>
+        <option value="VISIBILITY_Strong wind">Strong wind</option></select
+      ><br /><br />
+
+      <label for="light">Select the lighting conditions:</label>
+      <select id="light" name="light" required="required">
+        <option value="LIGHT_Dark, artificial">Dark, artificial</option>
+        <option value="LIGHT_Daylight">Daylight</option>
+        <option value="LIGHT_Dark">Dark</option>
+        <option value="LIGHT_Daylight, artificial">Daylight, artificial</option>
+        <option value="LIGHT_Dusk, artificial">Dusk, artificial</option>
+        <option value="LIGHT_Dawn">Dawn</option>
+        <option value="LIGHT_Dawn, artificial">Dawn, artificial</option>
+        <option value="LIGHT_Dusk">Dusk</option>
+        <option value="LIGHT_Other">Other</option>
+        </select
+      ><br /><br />
+      <label for="rdsfcond">Road Surface Condition:</label>
+      <select id="rdsfcond" name="rdsfcond" required="required">
+        <option value="RDSFCOND_Dry">Dry</option>
+        <option value="RDSFCOND_Ice">Ice</option>
+        <option value="RDSFCOND_Loose Snow">Loose Snow</option>
+        <option value="RDSFCOND_Wet">Wet</option>
+        <option value="RDSFCOND_Packed Snow">Packed Snow</option>
+        <option value="RDSFCOND_Slush">Slush</option>
+        <option value="RDSFCOND_Spilled Liquid">Spilled Liquid</option>
+        <option value="RDSFCOND_Loose Sand">Loose Sand</option>
+        <option value="RDSFCOND_Other">Other</option></select
+      ><br /><br />
+
+      <label for="invage">Select your age range:</label>
+      <select id="invage" name="invage" required="required">
+        <option value="unknown">Unknown</option>
+        <option value="INVAGE_0 to 4">0 to 4</option>
+        <option value="INVAGE_5 to 9">5 to 9</option>
+        <option value="INVAGE_10 to 14">10 to 14</option>
+        <option value="INVAGE_15 to 19">15 to 19</option>
+        <option value="INVAGE_20 to 24">20 to 24</option>
+        <option value="INVAGE_25 to 29">25 to 29</option>
+        <option value="INVAGE_30 to 34">30 to 34</option>
+        <option value="INVAGE_35 to 39">35 to 39</option>
+        <option value="INVAGE_40 to 44">40 to 44</option>
+        <option value="INVAGE_45 to 49">45 to 49</option>
+        <option value="INVAGE_50 to 54">50 to 54</option>
+        <option value="INVAGE_55 to 59">55 to 59</option>
+        <option value="INVAGE_60 to 64">60 to 64</option>
+        <option value="INVAGE_65 to 69">65 to 69</option>
+        <option value="INVAGE_70 to 74">70 to 74</option>
+        <option value="INVAGE_75 to 79">75 to 79</option>
+        <option value="INVAGE_80 to 84">80 to 84</option>
+        <option value="INVAGE_85 to 89">85 to 89</option>
+        <option value="INVAGE_90 to 94">90 to 94</option>
+        <option value="INVAGE_Over 95">Over 95</option>
+        </select
+      ><br /><br />
+
+      <label for="injury">Injury:</label>
+      <select id="injury" name="injury" required="required">
+        <option value="INJURY_None">No Injury</option>
+        <option value="INJURY_Minor">Minor Injury</option>
+        <option value="INJURY_Major">Major Injury</option>
+        <option value="INJURY_Fatal">Fatal</option>
+        <option value="INJURY_Minimal">Minimal</option></select
+      ><br /><br />
+
+      <label for="drivact">Driver Action:</label>
+      <select id="drivact" name="drivact" required="required">
+        <option value="DRIVACT_Normal">Normal</option>
+        <option value="DRIVACT_nanDRIVCOND_">Not follwing traffic rules</option>
+        </select
+      ><br /><br />
+
+      <label for="drivcond">Driver Condition:</label>
+      <select id="drivcond" name="drivcond" required="required">
+        <option value="DRIVCOND_Normal">Normal</option>
+        <option value="DRIVCOND_nan">Not Normal(example: Drunk,Inattentive)</option>
+        </select
+      ><br /><br />
+
+      <label for="pedestrian">Pedestrian Involved:</label>
+      <select id="pedestrian" name="pedestrian" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option>
+        </select
+      ><br /><br />
+
+      <label for="cyclist">Cyclist Involved:</label>
+      <select id="cyclist" name="cyclist" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="automobile">Automobile Involved:</label>
+      <select id="automobile" name="automobile" required="required">
+        <option value= 1 >Yes</option>
+<option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="motorcycle">Motorcycle Involved:</label>
+      <select id="motorcycle" name="motorcycle" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="truck">Truck Involved:</label>
+      <select id="truck" name="truck" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="trsn_city_veh">Transit/City Vehicle Involved:</label>
+      <select id="trsn_city_veh" name="trsn_city_veh" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+      <label for="emerg_veh">Emergency Vehicle:</label>
+      <select id="emerg_veh" name="emerg_veh" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="passenger">Passenger:</label>
+      <select id="passenger" name="passenger" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="speeding">Speeding:</label>
+      <select id="speeding" name="speeding" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="ag_driv">Aggressive Driver:</label>
+      <select id="ag_driv" name="ag_driv" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="redlight">Ran Red Light:</label>
+      <select id="redlight" name="redlight" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="alcohol">Drinking and Driving:</label>
+      <select id="alcohol" name="alcohol" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <label for="disability">Disability:</label>
+      <select id="disability" name="disability" required="required">
+        <option value= 1 >Yes</option>
+        <option value= 0>No</option></select
+      ><br /><br />
+
+      <button type="submit" id="predict">Predict</button>
+      <button type="reset" id="reset">Reset</button>
+    </form>
+    <footer>
+      <p id="footer">
+        &copy; Copright KSI Dataset by Gitansh Mittal, Dhrumit Patel, Alakh
+        Patel, Yagnam Sukhadia.
+      </p>
+    </footer>
+    <script>
+      var model = '';
+      const modelIn = document.getElementById("modelSelected");
+      function setSVM(){
+        model = 'SUPPORT VECTOR CLASSIFIER'
+        modelIn.value = model;
+      }
+      function setNN(){
+        model = 'NEURAL NETWORK'
+        modelIn.value = model;
+      }
+      function setLR(){
+        model = 'LOGISTIC REGRESSION'
+        modelIn.value = model;
+      }
+      function setNB(){
+        model = 'NAIVE BAYES'
+        modelIn.value = model;
+      }
+      function setRF(){
+        model = 'RANDOM FOREST'
+        modelIn.value = model;
+      }
+      function chk(){
+        alert(modelIn.value);
+      }
+    </script>
+  </body>
+</html> 

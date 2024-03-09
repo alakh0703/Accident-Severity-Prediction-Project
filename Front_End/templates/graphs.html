@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphs</title>
+    <style>
+            html {
+        background-color: rgb(151, 153, 116);
+      }
+      .logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #navbarDesign {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+      }
+      .mainNav {
+        background: #6c6fba;
+        height: 80px;
+        width: 90%;
+        margin-left: 76px;
+        border-radius: 25px;
+      }
+            .navbar {
+        position: sticky;
+      }
+      #mainNav {
+        overflow: hidden;
+        width: 90%;
+      }
+      #navbarDesign {
+        float: right;
+        margin-right: 20px;
+      }
+      #navbarDesign li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      #navbarDesign li a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-size: 17px;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #navbarDesign li a.active,
+      #navbarDesign li a:hover {
+        background: black;
+        transition: 0.5s;
+      }
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      html {
+        background-color: rgb(151, 153, 116);
+      }
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 50px;
+      }
+      .wrapper1 {
+      display: inline-block; 
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper1 img {
+      display: block; 
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+
+    }
+    .wrapper2 {
+      display: inline-block; 
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper2 img {
+      display: block; 
+      padding: 50px;
+      height: 100vh;
+        width: 70vw; 
+    }
+    .wrapper3 {
+      display: inline-block; 
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper3 img {
+      display: block; 
+      padding: 50px;
+      height: 100vh;
+        width: 70vw; 
+    }
+    .wrapper4 {
+      display: inline-block; 
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper4 img {
+      display: block; 
+      padding: 50px;
+      height: 100vh;
+        width: 70vw; 
+    }
+    .wrapper5 {
+      display: inline-block; 
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper5 img {
+      display: block; 
+      padding: 50px;
+      height: 100vh;
+        width: 70vw; 
+    }
+    .wrapper6 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper6 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper7 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper7 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper8 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper8 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper9 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper9 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper10 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper10 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper11 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper11 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper12 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper12 img {
+      display: block;
+      padding: 50px;
+      height: 150vh;
+        width: 70vw;
+    }
+    .wrapper13 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper13 img {
+      display: block;
+      padding: 50px;
+      height: 110vh;
+        width: 70vw;
+    }
+    .wrapper14 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper14 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper15 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper15 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+    .wrapper16 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper16 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+
+    .wrapper17 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper17 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+
+    .wrapper18 {
+      display: inline-block;
+      border: 8px solid black;
+      padding: 10px;
+      margin-left: 200px;
+      margin-bottom: 100px;
+      background-color: whitesmoke;
+    }
+
+    .wrapper18 img {
+      display: block;
+      padding: 50px;
+      height: 100vh;
+        width: 70vw;
+    }
+
+
+
+
+
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-left: 700px;
+        background-color: lightgreen;
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: olive;
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav class="mainNav">
+        <label class="logo" style="margin-right: 200px">KSI Dataset - Classifier</label>
+        <ul id="navbarDesign">
+          <li><a href="./">Home</a></li>
+          <li><a href="{{ url_for('view_graphs') }}">Graphs</a></li>
+          <li><a href="{{url_for('view_report')  }}">Report</a></li>
+          <li><a href="{{ url_for('view_feedback') }}">Group Info and Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Graphs and plots:</h1>
+    <div class="container">
+      <div class="wrapper1">
+        <img src="{{ url_for('static', filename='images/1.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper2">
+        <img src="{{ url_for('static', filename='images/2.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper3">
+        <img src="{{ url_for('static', filename='images/3.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper4">
+        <img src="{{ url_for('static', filename='images/4.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper5">
+        <img src="{{ url_for('static', filename='images/5.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper6">
+        <img src="{{ url_for('static', filename='images/6.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper7">
+        <img src="{{ url_for('static', filename='images/7.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper8">
+        <img src="{{ url_for('static', filename='images/8.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper9">
+        <img src="{{ url_for('static', filename='images/9.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper10">
+        <img src="{{ url_for('static', filename='images/10.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper11">
+        <img src="{{ url_for('static', filename='images/11.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper12">
+        <img src="{{ url_for('static', filename='images/12.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper13">
+        <img src="{{ url_for('static', filename='images/13.JPG') }}" alt="" />
+      </div>
+      <h1>ROC Curves:</h1>
+      <div class="wrapper14">
+        <img src="{{ url_for('static', filename='images/14.JPG') }}" alt="" />
+      </div>
+      <div class="wrapper15">
+        <img src="{{ url_for('static', filename='images/15.png') }}" alt="" />
+    </div>
+    <div class="wrapper16">
+        <img src="{{ url_for('static', filename='images/16.JPG') }}" alt="" />
+    </div>
+    <div class="wrapper17">
+        <img src="{{ url_for('static', filename='images/17.JPG') }}" alt="" />
+    </div>
+    <div class="wrapper18">
+        <img src="{{ url_for('static', filename='images/18.JPG') }}" alt="" />
+    </div>
+    <br />
+  </body>
+</html>

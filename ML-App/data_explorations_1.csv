@@ -1,0 +1,404 @@
+column,count,mean,std,min,25%,50%,75%,max,count,top,freq,unique,unique,type,nulls
+X,17488.0,-8838300.697651388,11602.729862195722,-8865305.02239613,-8846498.37366304,-8838365.70562416,-8829649.38949504,-8807929.17572942,null,null,null,"[-8829728.09237504 -8854874.3861088  -8825797.7351136  ...
+ -8832407.66383792 -8855649.61504268 -8837578.23154628]",4710,float64,0
+Y,17488.0,5420762.85449766,8655.505596248597,5402161.93273075,5413284.18338824,5419555.9327843,5427830.37149081,5443099.14765252,null,null,null,"[5419070.89934805 5414091.15682334 5425917.61920195 ... 5424044.85622993
+ 5411145.9830746  5411336.75007468]",4283,float64,0
+INDEX_,17488.0,36433556.096123055,36950311.28287805,3363207.0,5373755.75,7517348.5,80722548.0,81666944.0,null,null,null,[ 3389067  3389068  3442993 ... 81584314 81584315 81588154],17488,int64,0
+ACCNUM,17488.0,2220022610.550892,3215482215.8732953,25301.0,1073992.0,1306973.5,5001556735.0,9085345312.0,null,null,null,[    893184     913296     911336 ... 1001970214 1001982074 1001983260],6263,int64,0
+YEAR,17488.0,2012.5691903019213,4.479841684028977,2006.0,2009.0,2012.0,2016.0,2021.0,null,null,null,"[2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019
+ 2020 2021]",16,int64,0
+TIME,17488.0,1359.0089775846295,629.1613680785192,0.0,920.0,1445.0,1848.0,2359.0,null,null,null,[ 236 2040 1000 ... 2113 1926 1201],1317,object,0
+WARDNUM,16963.0,2571.595885161823,186475.7766976862,1.0,7.0,13.0,22.0,17162221.0,null,null,null,"[1.9000000e+01 2.0000000e+00 2.1000000e+01 1.0000000e+01 8.1500000e+02
+ 5.0000000e+00 4.0000000e+00 1.0000000e+00 1.8000000e+01 1.7000000e+01
+ 3.0000000e+00 2.4000000e+01 1.6210000e+03 8.0000000e+00 1.2000000e+01
+ 2.5000000e+01 1.1000000e+01 9.0000000e+00 8.1200000e+02 1.5000000e+01
+ 2.3000000e+01 1.3000000e+01 6.0000000e+00 1.4000000e+01 1.0130000e+03
+ 2.3250000e+03 2.1200000e+03 1.6000000e+01 2.0000000e+01 7.0000000e+00
+ 2.2000000e+01 9.1110000e+04 2.2230000e+03 4.1000000e+02 1.5160000e+03
+ 7.6000000e+01 2.4250000e+03 2.1240000e+03 1.1100000e+03 9.1100000e+02
+ 1.1130000e+03 9.1200000e+02 1.7220000e+03 5.9000000e+01 8.9000000e+01
+ 9.1000000e+02 1.9200000e+03 1.8170000e+03 6.1800000e+02 1.4190000e+03
+ 1.3140000e+03 1.1150000e+03 2.0240000e+03 1.2150000e+03 1.6200000e+03
+ 5.4000000e+01 1.1101300e+05 1.0140000e+03 1.6212000e+05 8.9120000e+03
+ 2.3240000e+03 1.2110000e+03 1.6192000e+05 3.4000000e+01 4.9100000e+03
+ 2.1230000e+03 4.9000000e+01 1.7162221e+07 9.1211000e+04 7.0600000e+02
+ 1.6190000e+03           nan]",71,int64,0
+LATITUDE,17488.0,43.71055616016685,0.05619630955545425,43.589678,43.662001,43.702745,43.756457,43.855445,null,null,null,[43.699595 43.667245 43.744045 ... 43.73189  43.648104 43.649344],4283,object,0
+LONGITUDE,17488.0,-79.39580602344618,0.10422909572720336,-79.63839,-79.469447,-79.39639,-79.31809,-79.122974,null,null,null,[-79.318797 -79.54469  -79.28349  ... -79.342868 -79.551654 -79.389316],4710,object,1592
+FATAL_NO,773.0,29.39974126778784,17.97405585478121,1.0,14.0,28.0,43.0,78.0,null,null,null,"[nan  1.  2.  3.  4. 23. 24. 25. 27. 28. 29. 30. 31. 15. 43. 44. 46. 45.
+ 47. 48. 49. 32. 16. 17. 18. 19. 20. 21. 33. 34.  5.  6.  7.  8. 12. 10.
+  9. 11. 13. 22. 14. 38. 39. 40. 41. 42. 35. 36. 37. 26. 50. 51. 52. 53.
+ 54. 57. 56. 58. 59. 60. 61. 62. 63. 55. 65. 64. 78. 71. 72. 73. 74. 75.
+ 76. 77. 66. 67. 68. 69. 70.]",78,object,14460
+ObjectId,17488.0,8744.5,5048.495089298064,1.0,4372.75,8744.5,13116.25,17488.0,null,null,null,[    1     2     3 ... 17486 17487 17488],17488,object,376
+DATE,null,null,null,null,null,null,null,null,17488,2014/08/17 04:00:00+00,35,"['2006/01/01 05:00:00+00' '2006/06/25 04:00:00+00'
+ '2006/06/28 04:00:00+00' ... '2021/10/12 04:00:00+00'
+ '2021/10/13 04:00:00+00' '2021/10/15 04:00:00+00']",3735,object,35
+STREET1,null,null,null,null,null,null,null,null,17488,YONGE ST,363,"['WOODBINE AVE' '29 BLAIR ATHOL Cres' 'BIRCHMOUNT RD' ...
+ 'VALLEY WOODS RD' 'LAWRENCE AVE WEST' '40 FARNSWORTH DR']",1789,float64,525
+STREET2,null,null,null,null,null,null,null,null,15896,BATHURST ST,142,['O CONNOR DR' nan 'MODERN RD' ... 'DUPLEX AV' 'FARNSWORTH DR' '#4351'],2637,float64,0
+OFFSET,null,null,null,null,null,null,null,null,3028,10 m North of,49,"[nan '60 NORTH OF' '100 m East of' '7 m West of' '51 m South of'
+ '43 m West of' '5 m North of' '8 m North of' '6 m West of' '80 m West of'
+ '4 m North of' '10 m East of' '25 m West of' '18 m East of'
+ '41 m South of' '50 m East of' '39 m East of' '10 m South of'
+ '76 m West of' '50 m West of' '97 m South of' '48 m East of'
+ '30 m South of' '500 m East of' '1 m North of' '58 m North of'
+ '500 m North of' '12 m West of' '100 m South of' '17 m West of'
+ '280 m East of' '60 m East of' '30 m North of' '234 m South of'
+ '450 m West of' '314 m  of' '192 m East of' '2 m North of' '1 m West of'
+ '44 m North of' '25 m East of' '132 m West of' '200 m North of'
+ '65 m East of' '27 m East of' '64 m North of' '28 m East of'
+ '10 m West of' '85 m West of' '55 m West of' '200 m South of'
+ '40 m West of' '26 m South of' '57 m East of' '9 m West of'
+ '4 m South of' '3 m East of' '73 m West of' '35 m North of'
+ '167 m East of' '12 m East of' '15 m West of' '18 m South of'
+ '40 m North of' '9 m East of' '18 m North of' '545 m North of'
+ '5 m East of' '80 m East of' '300 m East of' '38 m North of'
+ '20 m North of' '1 m East of' '5 m West of' '11 m South of'
+ '5 m South of' '100 m West of' '40 m East of' '22 m East of'
+ '4 m East of' '25 m South of' '6 m South of' '20 m South of'
+ '10 m North of' '17 m North of' '33 m West of' '374 m West of'
+ '185 m South of' '98 m West of' '37 m West of' '3 m West of'
+ '50 m South of' '12 m South of' '31 m North of' '20 m East of'
+ '24 m South of' '125 m East of' '9 m South of' '30 m East of'
+ '20 m West of' '40 m South of' '53 m South of' '24 m West of'
+ '2 m West of' '165 m South of' '24 m  of' '15 m East of' '220 m South of'
+ '100 m North of' '55 m North of' '14 m West of' '3 m South of'
+ '23 m East of' '42 m South of' '58 m West of' '46 m North of'
+ '4 m West of' '70 m West of' '15 m South of' '246 m North of'
+ '49 m East of' '33 m East of' '60 m North of' '358 m North of'
+ '64 m West of' '64 m East of' '16 m West of' '6 m North of'
+ '3 m North of' '35 m East of' '3 m  of' '120 m West of' '94 m North of'
+ '51 m East of' '245 m East of' '172 m East of' '16 m North of'
+ '30 m West of' '39 m South of' '13 m North of' '450 m East of' '25M'
+ '1 m South of' '81 m West of' '11 m West of' '67 m South of'
+ '99 m South of' '18 m West of' '60 m West of' '14 m East of'
+ '120 m North of' '14 m North of' '19 m South of' '90 m North of'
+ '65.6 M E of' '13 m West of' '105 m North of' '15 m North of'
+ '58 m South of' '8 m South of' '27 m West of' '137 m South of'
+ '7 m North of' '12.5 M S of' '130 m East of' '121 m North of'
+ '282 m South of' '40 m East' '19 m East of' '134 m West of' '7 m East of'
+ '119 m West of' '80 m South of' '16 m East of' '196 m North of'
+ '265 m East of' '130 m South of' '70 m East of' '57 m North of'
+ '90 m West of' '85 m South of' '37 m South of' '51 m West of'
+ '11 m South of Light Post 300' '219 m North of' '139 m South of'
+ '66 m North of' '68 m North of' '368 m East of' '120 m South of'
+ '45 m West of' '11 m North of' '143 m West of' '92.1 m south'
+ '32 m East of' '65 m South of' '200 m West of' '75 m East of'
+ '37 m East of' '110 m South of' '2 m South of' '150 m East of'
+ '420 m West of' '324 m East of' '63 m West of' '50 m North of'
+ '72 m North of' '55 m East of' '160 m West of' '23 m West of'
+ '458 m West of' '2 m East of' '400 m North of' '90 m South of'
+ '34 m South of' '7 m South of MARTIN GROVE RD' '10 m west' '150 m East'
+ '50 m North' '47 m East of' '47 m West of'
+ '100 m North of DONALBERT ROAD' '29 m East of' '700 m East of' 'north of'
+ '80 m North of' '34 m East of' '8 m West of' '63 m North of'
+ '300 m South of' '250 m West of' '69 m West of' '98 m South of'
+ '240 m North of' '107 m East of' '150 m West of' '20 m  of'
+ '95 m South of' '500 m West of' '42 m East of' '7 m South of'
+ '18 m South of BRANDON AV' '30  m East of' '38 m East of' '120 m East of'
+ '213 m West of' '71 m West of' '84 m West of' '8 m East of'
+ '131 m South of' '51 m North of' '76 m South of' '84 m South of'
+ '177 m West of' '297 m East of' '45 m South of' '88 m North of'
+ '200 m East of' '150 m North of' '21 m North of' '99 m East of'
+ '21 m East of' '69 m North of' '35 m South of' '233 m East of'
+ '9 m North of' '101 m South of' '65 m West of' '29 m West of'
+ '112 m North' '6.5 m West of' '8.6 m East of' '386 m South of'
+ '17 m East of' '176 m South of' '6 m East of' '26 m West of'
+ '12 m North of' '900 m West of' '252 m South of' '113 m North of'
+ '20 m North' '350 m West' '350 m North of' '185 m East of' '49 m West of'
+ '74 m South of' '16 m South of' '99 m West of' '11 m East of'
+ '52 m East of' '28 m North of' '45 m  of' '192 m West of' '60 m South of'
+ '365 m East of REGATTA ROAD' '13 m East of' '31 m West of'
+ '81 m North of' '37 m North of' '59 m North of' '17 meters south'
+ '107 m North of' '180 m East of' '147 M North' '44 m West of'
+ '33 m North of' '620 HURON ST' '45 m North of' '70 m South of'
+ '400 m East of' '77 m South of' '75 m North of' '87 m East of'
+ '23 m North of' '297 m South of' '73 m North of' '31.8 m East of'
+ '158 m South of' '75 m East' '31 m East of' '92 m East of' '41 m West of'
+ '140 m East of' '84 m North of' '153 m North of' '22 m West of'
+ '378 m South of' '34 meters south' '52 m West of' '338 m West of'
+ '150 m South of' '403 m N of' '408 m East of' 'E of' 'W of' '195 m South'
+ '42 m South' '260 m West of' '600 m East' '13 m South of' '264 m West of'
+ '151 m West of' '235 m South of' '90 m East of ALLANFORD RD'
+ '169 m South of' '119 m south' '425 m East of' 'LEGGETT AVE' 'Near #685'
+ '132 m South of' '900 m East of' '44 m East of' '27 m South of'
+ '190 metre north of' '57 m West of' '90 m East of' '24 m East of'
+ '63 m East of' '170 m East of' '130 m West of' '82 m West of'
+ '25 m North of' '5 m  of' '25 m West of YONGE ST' '365 m East of'
+ '135 m West of' '26 m East of' '110 m West of' '3 metres east'
+ '233 m South of' '81 m South of' '305 m West of' '52 m North of'
+ '250 m South of' '160 m South of' '42.9 M EAST OF' '89 m East of'
+ '159 m West of' '36 m West of' '43 m East of' '54 m East of'
+ '20 metres north' '4 m  of' '28 m West of' '110 m East of'
+ '290 m East of' '155 m East of' '100 m south' '94 m East of'
+ '73 m South of' '89.5 m south' '39 m West of' '36 m East of'
+ '78 m South of' '189 m East of' '6 m  of' '56 m South of St REGIS CR'
+ 'No.4600 (Driveway)' '96 m West of' '34 m West of' '280 m North of'
+ '163 m North of' '666 m South of' '112 m South of' '48 m North of'
+ '83 m West of' '93 m North of' '168 m South of' '164 m South of'
+ '2 m  of' '66 m West of' '75 m South of' '191 m North of' '103 m West of'
+ '102 m North of' '800 m South of' '62 m West of' 'GERRARD ST E'
+ '61 m North of' '21 m West of' '339 m West of' '53 m West of'
+ '160 m East of' '332 m West of' '284 m North of' '95 m East of'
+ '13 m  of' '320 m North of' '270 m North of' '64 m South of'
+ '19 m North of' '120 M WEST OF MIDLAND AVE' 'JUTLAND RD' '38 m South of'
+ '1 km North of' '100 m South of SHEPPARD AVE W' '21 m west of'
+ '55 m South of' '101 m East of' '160 m North of' '430 m South of'
+ '92 m North of' '58 m East of' '54 m West of']",444,float64,0
+ROAD_CLASS,null,null,null,null,null,null,null,null,17112,Major Arterial,12471,"['Major Arterial' 'Local' 'Minor Arterial' nan 'Collector' 'Other'
+ 'Pending' 'Laneway' 'Expressway' 'Expressway Ramp' 'Major Arterial Ramp']",10,object,95
+DISTRICT,null,null,null,null,null,null,null,null,17453,Toronto and East York,5939,['Toronto and East York' 'Etobicoke York' 'Scarborough' 'North York' nan],4,object,5450
+LOCCOORD,null,null,null,null,null,null,null,null,17393,Intersection,11561,"['Intersection' 'Mid-Block' 'Exit Ramp Westbound' 'Exit Ramp Southbound'
+ nan 'Mid-Block (Abnormal)' 'Entrance Ramp Westbound'
+ 'Park, Private Property, Public Lane']",7,object,34
+ACCLOC,null,null,null,null,null,null,null,null,12038,At Intersection,8347,"['Intersection Related' nan 'At Intersection' 'Non Intersection'
+ 'At/Near Private Drive' 'Overpass or Bridge' 'Underpass or Tunnel'
+ 'Private Driveway' 'Trail' 'Laneway']",9,object,18
+TRAFFCTL,null,null,null,null,null,null,null,null,17454,No Control,8421,"['No Control' 'Stop Sign' 'Traffic Signal' 'Pedestrian Crossover'
+ 'Traffic Controller' nan 'Yield Sign' 'School Guard' 'Traffic Gate'
+ 'Police Control' 'Streetcar (Stop for)']",10,object,0
+VISIBILITY,null,null,null,null,null,null,null,null,17470,Clear,15069,"['Clear' 'Rain' 'Other' 'Snow' 'Strong wind' 'Freezing Rain'
+ 'Fog, Mist, Smoke, Dust' 'Drifting Snow' nan]",8,object,23
+LIGHT,null,null,null,null,null,null,null,null,17488,Daylight,10032,"['Dark' 'Dusk' 'Daylight' 'Dark, artificial' 'Dawn' 'Dusk, artificial'
+ 'Dawn, artificial' 'Daylight, artificial' 'Other']",9,object,7
+RDSFCOND,null,null,null,null,null,null,null,null,17465,Dry,13985,"['Wet' 'Dry' 'Other' 'Slush' 'Ice' 'Loose Snow' 'Packed Snow'
+ 'Spilled liquid' 'Loose Sand or Gravel' nan]",9,object,4
+ACCLASS,null,null,null,null,null,null,null,null,17481,Non-Fatal Injury,15032,['Non-Fatal Injury' 'Fatal' 'Property Damage Only' nan],3,object,14
+IMPACTYPE,null,null,null,null,null,null,null,null,17484,Pedestrian Collisions,6977,"['Approaching' 'Other' 'Cyclist Collisions' 'Pedestrian Collisions'
+ 'Rear End' 'Angle' 'SMV Other' 'Turning Movement' 'Sideswipe'
+ 'SMV Unattended Vehicle' nan]",10,object,0
+INVTYPE,null,null,null,null,null,null,null,null,17474,Driver,7922,"['Passenger' 'Driver' 'Vehicle Owner' 'Cyclist' 'Pedestrian'
+ 'Truck Driver' 'Other Property Owner' 'Motorcycle Driver'
+ 'Motorcycle Passenger' nan 'Other' 'In-Line Skater' 'Driver - Not Hit'
+ 'Moped Driver' 'Wheelchair' 'Pedestrian - Not Hit' 'Trailer Owner'
+ 'Witness' 'Cyclist Passenger' 'Moped Passenger']",19,object,1611
+INVAGE,null,null,null,null,null,null,null,null,17488,unknown,2587,"['50 to 54' '15 to 19' '55 to 59' '20 to 24' 'unknown' '45 to 49'
+ '30 to 34' '35 to 39' '25 to 29' '40 to 44' '70 to 74' '60 to 64'
+ '10 to 14' '75 to 79' '5 to 9' '85 to 89' '0 to 4' '65 to 69' '80 to 84'
+ 'Over 95' '90 to 94']",21,float64,16715
+INJURY,null,null,null,null,null,null,null,null,15877,None,6662,['Major' 'Minor' nan 'None' 'Minimal' 'Fatal'],5,object,4937
+INITDIR,null,null,null,null,null,null,null,null,12551,East,3131,[nan 'North' 'South' 'East' 'West' 'Unknown'],5,object,3033
+VEHTYPE,null,null,null,null,null,null,null,null,14455,"Automobile, Station Wagon",7163,"[nan 'Other' 'Automobile, Station Wagon' 'Bicycle'
+ 'Municipal Transit Bus (TTC)' 'Truck - Open' 'Motorcycle' 'Taxi'
+ 'Passenger Van' 'Delivery Van' 'Moped' 'Pick Up Truck' 'Police Vehicle'
+ 'Truck-Tractor' 'Truck - Closed (Blazer, etc)' 'Street Car'
+ 'Truck - Dump' 'Bus (Other) (Go Bus, Gray Coach)' 'Intercity Bus'
+ 'Construction Equipment' 'Truck (other)' 'Truck - Tank'
+ 'Off Road - 2 Wheels' 'Other Emergency Vehicle' 'Fire Vehicle'
+ 'School Bus' 'Tow Truck' 'Truck - Car Carrier' 'Ambulance'
+ 'Railway Train' 'Off Road - 4 Wheels']",30,object,7405
+MANOEUVER,null,null,null,null,null,null,null,null,10083,Going Ahead,6005,"[nan 'Going Ahead' 'Turning Right' 'Stopped' 'Turning Left' 'Overtaking'
+ 'Reversing' 'Other' 'Slowing or Stopping'
+ 'Pulling Away from Shoulder or Curb' 'Parked' 'Changing Lanes'
+ 'Pulling Onto Shoulder or towardCurb' 'Making U Turn' 'Unknown' 'Merging'
+ 'Disabled']",16,object,8666
+DRIVACT,null,null,null,null,null,null,null,null,8822,Driving Properly,4036,"[nan 'Driving Properly' 'Lost control' 'Failed to Yield Right of Way'
+ 'Improper Passing' 'Improper Turn' 'Exceeding Speed Limit'
+ 'Disobeyed Traffic Control' 'Following too Close' 'Other'
+ 'Improper Lane Change' 'Wrong Way on One Way Road'
+ 'Speed too Fast For Condition' 'Speed too Slow']",13,object,8669
+DRIVCOND,null,null,null,null,null,null,null,null,8819,Normal,5603,"[nan 'Normal' 'Ability Impaired, Alcohol Over .08' 'Unknown' 'Inattentive'
+ 'Had Been Drinking' 'Medical or Physical Disability'
+ 'Ability Impaired, Alcohol' 'Fatigue' 'Other' 'Ability Impaired, Drugs']",10,object,14567
+PEDTYPE,null,null,null,null,null,null,null,null,2921,Pedestrian hit at mid-block,732,"[nan
+ 'Pedestrian involved in a collision with transit vehicle anywhere along roadway'
+ 'Pedestrian hit at mid-block' 'Unknown'
+ 'Vehicle is going straight thru inter.while ped cross without ROW'
+ 'Pedestrian hit on sidewalk or shoulder'
+ 'Vehicle is going straight thru inter.while ped cross with ROW'
+ 'Vehicle turns left while ped crosses with ROW at inter.'
+ 'Vehicle turns left while ped crosses without ROW at inter.'
+ 'Vehicle turns right while ped crosses with ROW at inter.'
+ 'Vehicle hits the pedestrian walking or running out from between parked vehicles at mid-block'
+ 'Other / Undefined' 'Pedestrian hit a PXO/ped. Mid-block signal'
+ 'Vehicle turns right while ped crosses without ROW at inter.'
+ 'Vehicle is reversing and hits pedestrian'
+ 'Pedestrian hit at private driveway' 'Pedestrian hit at parking lot']",16,object,14531
+PEDACT,null,null,null,null,null,null,null,null,2957,Crossing with right of way,929,"[nan 'Crossing, no Traffic Control' 'Running onto Roadway'
+ 'Crossing without right of way' 'On Sidewalk or Shoulder'
+ 'Crossing with right of way' 'Other' 'Coming From Behind Parked Vehicle'
+ 'Walking on Roadway Against Traffic' 'Crossing, Pedestrian Crossover'
+ 'Pushing/Working on Vehicle' 'Person Getting on/off Vehicle'
+ 'Walking on Roadway with Traffic' 'Playing or Working on Highway'
+ 'Crossing marked crosswalk without ROW'
+ 'Person Getting on/off School Bus']",15,object,14530
+PEDCOND,null,null,null,null,null,null,null,null,2958,Normal,1664,"[nan 'Unknown' 'Normal' 'Other' 'Inattentive' 'Had Been Drinking'
+ 'Medical or Physical Disability' 'Ability Impaired, Alcohol'
+ 'Ability Impaired, Alcohol Over .80' 'Ability Impaired, Drugs' 'Fatigue']",10,object,16749
+CYCLISTYPE,null,null,null,null,null,null,null,null,739,Motorist turned left across cyclists path.,126,"[nan 'Cyclist turns right across motorists path'
+ 'Motorist turned left across cyclists path.'
+ 'Cyclist without ROW rides into path of motorist at inter, lnwy, dwy-Cyclist not turn.'
+ 'Motorist without ROW drives into path of cyclist at inter, lnwy, dwy-Driver not turn.'
+ 'Cyclist loses control and strikes object (pole, ttc track)'
+ 'Cyclist rode off sidewalk into road at midblock.'
+ 'Motorist turns right at non-signal Inter.(stop, yield, no cont.,and dwy) and strikes cyclist.'
+ 'Cyclist struck opened vehicle door'
+ 'Cyclist turned left across motorists path.'
+ 'Cyclist and Driver travelling in same direction. One vehicle sideswipes the other.'
+ 'Motorist turning right on green or amber at signalized intersection strikes cyclist.'
+ 'Cyclist makes u-turn in-front of driver.'
+ 'Cyclist and Driver travelling in same direction. One vehicle rear-ended the other.'
+ 'Motorist turning right on red at signalized intersection strikes cyclist.'
+ 'Cyclist strikes pedestrian.'
+ 'Insufficient information (to determine cyclist crash type).'
+ 'Motorist reversing struck cyclist.'
+ 'Cyclist struck at PXO(cyclist either travel in same dir. as veh. or ride across xwalk)'
+ 'Motorist loses control and strikes cyclist.'
+ 'Cyclist strikes a parked vehicle.'
+ 'Motorist makes u-turn in-front of cyclist.'
+ 'Cyclist falls off bike - no contact with motorist.']",22,object,16758
+CYCACT,null,null,null,null,null,null,null,null,730,Driving Properly,401,"[nan 'Failed to Yield Right of Way' 'Driving Properly' 'Other'
+ 'Lost control' 'Disobeyed Traffic Control' 'Improper Turn'
+ 'Improper Passing' 'Improper Lane Change' 'Following too Close'
+ 'Speed too Fast For Condition' 'Wrong Way on One Way Road']",11,object,16759
+CYCCOND,null,null,null,null,null,null,null,null,729,Normal,506,"[nan 'Inattentive' 'Normal' 'Unknown' 'Had Been Drinking'
+ 'Ability Impaired, Drugs' 'Ability Impaired, Alcohol Over .80'
+ 'Medical or Physical Disability' 'Ability Impaired, Alcohol' 'Other'
+ 'Fatigue']",10,object,10409
+PEDESTRIAN,null,null,null,null,null,null,null,null,7079,Yes,7079,[nan 'Yes'],1,object,15661
+CYCLIST,null,null,null,null,null,null,null,null,1827,Yes,1827,[nan 'Yes'],1,object,1628
+AUTOMOBILE,null,null,null,null,null,null,null,null,15860,Yes,15860,['Yes' nan],1,object,16006
+MOTORCYCLE,null,null,null,null,null,null,null,null,1482,Yes,1482,[nan 'Yes'],1,object,16428
+TRUCK,null,null,null,null,null,null,null,null,1060,Yes,1060,[nan 'Yes'],1,object,16419
+TRSN_CITY_VEH,null,null,null,null,null,null,null,null,1069,Yes,1069,[nan 'Yes'],1,object,17445
+EMERG_VEH,null,null,null,null,null,null,null,null,43,Yes,43,[nan 'Yes'],1,object,10867
+PASSENGER,null,null,null,null,null,null,null,null,6621,Yes,6621,['Yes' nan],1,object,15047
+SPEEDING,null,null,null,null,null,null,null,null,2441,Yes,2441,['Yes' nan],1,object,8449
+AG_DRIV,null,null,null,null,null,null,null,null,9039,Yes,9039,['Yes' nan],1,object,16035
+REDLIGHT,null,null,null,null,null,null,null,null,1453,Yes,1453,[nan 'Yes'],1,object,16726
+ALCOHOL,null,null,null,null,null,null,null,null,762,Yes,762,['Yes' nan],1,object,17013
+DISABILITY,null,null,null,null,null,null,null,null,475,Yes,475,[nan 'Yes'],1,object,0
+HOOD_158,null,null,null,null,null,null,null,null,17488,1,557,"['60' '10' '119' '170' '164' '40' '110' '88' '111' '1' '38' '47' '18'
+ '136' '150' '165' '102' '98' '85' '160' '63' '143' '107' '11' '156' '169'
+ '84' '99' '162' '64' '4' '83' '128' '114' '73' '43' '27' '58' '5' '6'
+ '30' '48' '87' '146' '126' '153' '20' '61' '89' '50' '124' '44' '123'
+ '78' '100' '109' '25' '167' '70' '80' '159' '130' '129' 'NSA' '135' '95'
+ '142' '65' '34' '81' '148' '32' '9' '108' '149' '120' '144' '166' '157'
+ '22' '96' '138' '125' '116' '16' '163' '161' '91' '171' '42' '52' '168'
+ '23' '92' '103' '66' '54' '59' '172' '56' '145' '101' '57' '152' '29'
+ '115' '139' '39' '122' '21' '112' '37' '97' '106' '174' '151' '33' '154'
+ '35' '53' '24' '8' '71' '94' '7' '141' '62' '90' '118' '79' '55' '147'
+ '41' '13' '113' '31' '68' '86' '2' '3' '36' '158' '105' '140' '72' '155'
+ '28' '46' '133' '121' '19' '134' '69' '49' '15' '12' '67' '74' '173']",159,object,0
+NEIGHBOURHOOD_158,null,null,null,null,null,null,null,null,17488,West Humber-Clairville,557,"['Woodbine-Lumsden' 'Princess-Rosethorn' 'Wexford/Maryvale'
+ 'Yonge-Bay Corridor' 'Wellington Place' 'St.Andrew-Windfields'
+ 'Keelesdale-Eglinton West' 'High Park North' 'Rockcliffe-Smythe'
+ 'West Humber-Clairville' 'Lansing-Westgate' 'Don Valley Village'
+ 'New Toronto' 'West Hill' 'Fenside-Parkwoods' 'Harbourfront-CityPlace'
+ 'Forest Hill North' 'Rosedale-Moore Park' 'South Parkdale'
+ 'Mimico-Queensway' 'The Beaches' 'West Rouge' 'Oakwood Village'
+ 'Eringate-Centennial-West Deane' 'Bendale-Glen Andrew' 'Bay-Cloverhill'
+ 'Little Portugal' 'Mount Pleasant East' 'West Queen West'
+ 'Woodbine Corridor' 'Rexdale-Kipling' 'Dufferin Grove'
+ 'Agincourt South-Malvern West' 'Lambton Baby Point' 'Moss Park'
+ 'Victoria Village' 'York University Heights' 'Old East York'
+ 'Elms-Old Rexdale' 'Kingsview Village-The Westway' 'Brookhaven-Amesbury'
+ 'Hillcrest Village' 'High Park-Swansea' 'Malvern East' 'Dorset Park'
+ 'Avondale' 'Alderwood' 'Taylor-Massey' 'Runnymede-Bloor West Village'
+ 'Newtonbrook East' 'Kennedy Park' 'Flemingdon Park' 'Cliffcrest'
+ 'Kensington-Chinatown' 'Yonge-Eglinton' 'Caledonia-Fairbank'
+ 'Glenfield-Jane Heights' 'Church-Wellesley' 'South Riverdale'
+ 'Palmerston-Little Italy' 'Etobicoke City Centre' 'Milliken'
+ 'Agincourt North' 'NSA' 'Morningside' 'Annex' 'Woburn North'
+ 'Greenwood-Coxwell' 'Bathurst Manor' 'Trinity-Bellwoods'
+ ""East L'Amoreaux"" 'Englemount-Lawrence' 'Edenbridge-Humber Valley'
+ 'Briar Hill-Belgravia' ""Parkwoods-O'Connor Hills"" 'Clairlea-Birchmount'
+ 'Morningside Heights' 'St Lawrence-East Bayfront-The Islands'
+ 'Bendale South' 'Humbermede' 'Casa Loma' 'Eglinton East' 'Ionview'
+ 'Steeles' 'Stonegate-Queensway' 'Fort York-Liberty Village'
+ 'Humber Bay Shores' 'Weston-Pelham Park' 'Junction-Wallace Emerson'
+ 'Banbury-Don Mills' 'Bayview Village' 'Downtown Yonge East'
+ 'Pelmo Park-Humberlea' 'Corso Italia-Davenport' 'Lawrence Park South'
+ 'Danforth' ""O'Connor-Parkview"" 'Danforth East York' 'Dovercourt Village'
+ 'Leaside-Bennington' 'Malvern West' 'Forest Hill South' 'Broadview North'
+ 'East Willowdale' 'Maple Leaf' 'Mount Dennis' 'Scarborough Village'
+ 'Bedford Park-Nortown' 'Birchcliffe-Cliffside' 'Humber Summit'
+ 'Beechborough-Greenbrook' 'Willowdale West' 'Yonge-St.Clair'
+ 'Humewood-Cedarvale' 'South Eglinton-Davisville' 'Yonge-Doris'
+ 'Clanton Park' 'Oakdale-Beverley Heights' 'Westminster-Branson'
+ 'Henry Farm' 'Black Creek' 'Humber Heights-Westmount'
+ 'Cabbagetown-South St.James Town' 'Wychwood'
+ 'Willowridge-Martingrove-Richview' 'Golfdale-Cedarbrae-Woburn'
+ 'East End-Danforth' 'Junction Area' ""Tam O'Shanter-Sullivan"" 'University'
+ 'Thorncliffe Park' ""L'Amoreaux West"" 'Bridle Path-Sunnybrook-York Mills'
+ 'Etobicoke West Mall' 'Weston' 'Yorkdale-Glen Park' 'North Riverdale'
+ 'Roncesvalles' 'Mount Olive-Silverstone-Jamestown'
+ 'Thistletown-Beaumond Heights' 'Newtonbrook West' 'Islington'
+ 'Lawrence Park North' 'Guildwood' 'Regent Park' 'Downsview' 'Rustic'
+ 'Pleasant View' 'Centennial Scarborough' 'Oakridge' 'Long Branch'
+ 'Highland Creek' 'Blake-Jones' 'Bayview Woods-Steeles' 'Kingsway South'
+ 'Markland Wood' 'Playter Estates-Danforth' 'North St.James Town'
+ 'North Toronto']",159,object,0
+HOOD_140,null,null,null,null,null,null,null,null,17488,77,673,"['60' '10' '119' '76' '77' '40' '110' '88' '111' '1' '38' '47' '18' '136'
+ '45' '102' '98' '86' '17' '63' '131' '107' '11' '127' '84' '99' '82' '64'
+ '4' '93' '128' '114' '73' '43' '85' '27' '58' '5' '6' '30' '48' '87'
+ '132' '126' '51' '20' '61' '89' '50' '75' '138' '44' '123' '78' '100'
+ '109' '25' '70' '95' '14' '130' '129' 'NSA' '135' '137' '34' '81' '117'
+ '32' '83' '9' '108' '120' '22' '80' '96' '125' '116' '16' '29' '91' '42'
+ '52' '23' '92' '65' '103' '66' '54' '59' '56' '12' '101' '57' '28' '115'
+ '139' '39' '122' '21' '112' '37' '97' '106' '104' '33' '26' '35' '53'
+ '24' '8' '71' '94' '7' '62' '90' '118' '79' '55' '124' '41' '13' '113'
+ '31' '68' '2' '3' '36' '105' '140' '72' '46' '133' '121' '19' '134' '69'
+ '49' '15' '67' '74']",141,object,0
+NEIGHBOURHOOD_140,null,null,null,null,null,null,null,null,17488,Waterfront Communities-The Island (77),673,"['Woodbine-Lumsden (60)' 'Princess-Rosethorn (10)'
+ 'Wexford/Maryvale (119)' 'Bay Street Corridor (76)'
+ 'Waterfront Communities-The Island (77)' 'St.Andrew-Windfields (40)'
+ 'Keelesdale-Eglinton West (110)' 'High Park North (88)'
+ 'Rockcliffe-Smythe (111)' 'West Humber-Clairville (1)'
+ 'Lansing-Westgate (38)' 'Don Valley Village (47)' 'New Toronto (18)'
+ 'West Hill (136)' 'Parkwoods-Donalda (45)' 'Forest Hill North (102)'
+ 'Rosedale-Moore Park (98)' 'Roncesvalles (86)'
+ 'Mimico (includes Humber Bay Shores) (17)' 'The Beaches (63)'
+ 'Rouge (131)' 'Oakwood Village (107)'
+ 'Eringate-Centennial-West Deane (11)' 'Bendale (127)'
+ 'Little Portugal (84)' 'Mount Pleasant East (99)' 'Niagara (82)'
+ 'Woodbine Corridor (64)' 'Rexdale-Kipling (4)'
+ 'Dovercourt-Wallace Emerson-Junction (93)'
+ 'Agincourt South-Malvern West (128)' 'Lambton Baby Point (114)'
+ 'Moss Park (73)' 'Victoria Village (43)' 'South Parkdale (85)'
+ 'York University Heights (27)' 'Old East York (58)'
+ 'Elms-Old Rexdale (5)' 'Kingsview Village-The Westway (6)'
+ 'Brookhaven-Amesbury (30)' 'Hillcrest Village (48)'
+ 'High Park-Swansea (87)' 'Malvern (132)' 'Dorset Park (126)'
+ 'Willowdale East (51)' 'Alderwood (20)' 'Taylor-Massey (61)'
+ 'Runnymede-Bloor West Village (89)' 'Newtonbrook East (50)'
+ 'Church-Yonge Corridor (75)' 'Eglinton East (138)' 'Flemingdon Park (44)'
+ 'Cliffcrest (123)' 'Kensington-Chinatown (78)' 'Yonge-Eglinton (100)'
+ 'Caledonia-Fairbank (109)' 'Glenfield-Jane Heights (25)'
+ 'South Riverdale (70)' 'Annex (95)' 'Islington-City Centre West (14)'
+ 'Milliken (130)' 'Agincourt North (129)' 'NSA' 'Morningside (135)'
+ 'Woburn (137)' 'Bathurst Manor (34)' 'Trinity-Bellwoods (81)'
+ ""L'Amoreaux (117)"" 'Englemount-Lawrence (32)' 'Dufferin Grove (83)'
+ 'Edenbridge-Humber Valley (9)' 'Briar Hill-Belgravia (108)'
+ 'Clairlea-Birchmount (120)' 'Humbermede (22)'
+ 'Palmerston-Little Italy (80)' 'Casa Loma (96)' 'Ionview (125)'
+ 'Steeles (116)' 'Stonegate-Queensway (16)' 'Maple Leaf (29)'
+ 'Weston-Pellam Park (91)' 'Banbury-Don Mills (42)' 'Bayview Village (52)'
+ 'Pelmo Park-Humberlea (23)' 'Corso Italia-Davenport (92)'
+ 'Greenwood-Coxwell (65)' 'Lawrence Park South (103)' 'Danforth (66)'
+ ""O'Connor-Parkview (54)"" 'Danforth East York (59)'
+ 'Leaside-Bennington (56)' 'Markland Wood (12)' 'Forest Hill South (101)'
+ 'Broadview North (57)' 'Rustic (28)' 'Mount Dennis (115)'
+ 'Scarborough Village (139)' 'Bedford Park-Nortown (39)'
+ 'Birchcliffe-Cliffside (122)' 'Humber Summit (21)'
+ 'Beechborough-Greenbrook (112)' 'Willowdale West (37)'
+ 'Yonge-St.Clair (97)' 'Humewood-Cedarvale (106)'
+ 'Mount Pleasant West (104)' 'Clanton Park (33)'
+ 'Downsview-Roding-CFB (26)' 'Westminster-Branson (35)' 'Henry Farm (53)'
+ 'Black Creek (24)' 'Humber Heights-Westmount (8)'
+ 'Cabbagetown-South St.James Town (71)' 'Wychwood (94)'
+ 'Willowridge-Martingrove-Richview (7)' 'East End-Danforth (62)'
+ 'Junction Area (90)' ""Tam O'Shanter-Sullivan (118)"" 'University (79)'
+ 'Thorncliffe Park (55)' 'Kennedy Park (124)'
+ 'Bridle Path-Sunnybrook-York Mills (41)' 'Etobicoke West Mall (13)'
+ 'Weston (113)' 'Yorkdale-Glen Park (31)' 'North Riverdale (68)'
+ 'Mount Olive-Silverstone-Jamestown (2)'
+ 'Thistletown-Beaumond Heights (3)' 'Newtonbrook West (36)'
+ 'Lawrence Park North (105)' 'Guildwood (140)' 'Regent Park (72)'
+ 'Pleasant View (46)' 'Centennial Scarborough (133)' 'Oakridge (121)'
+ 'Long Branch (19)' 'Highland Creek (134)' 'Blake-Jones (69)'
+ 'Bayview Woods-Steeles (49)' 'Kingsway South (15)'
+ 'Playter Estates-Danforth (67)' 'North St.James Town (74)']",141,object,0
+DIVISION,null,null,null,null,null,null,null,null,17488,D42,1695,"['D55' 'D22' 'D41' 'D52' 'D32' 'D12' 'D11' 'D23' 'D33' 'D43' 'D13' 'D53'
+ 'D14' 'D42' 'D51' 'D31' 'NSA']",17,int64,0

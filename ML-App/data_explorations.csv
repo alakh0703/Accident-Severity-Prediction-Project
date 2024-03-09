@@ -1,0 +1,32 @@
+column,count,mean,std,min,25%,50%,75%,max,count,top,freq,unique,unique,type,nulls
+TIME,17488.0,1359.0089775846295,629.1613680785192,0.0,920.0,1445.0,1848.0,2359.0,null,null,null,[ 236 2040 1000 ... 2113 1926 1201],1317,int64,0
+ROAD_CLASS,null,null,null,null,null,null,null,null,17112,Arterial,15186,['Arterial' 'Local' nan 'Collector' 'other' 'Expressway'],5,object,376
+DISTRICT,null,null,null,null,null,null,null,null,17453,Toronto and East York,5939,['Toronto and East York' 'Etobicoke York' 'Scarborough' 'North York' nan],4,object,35
+LOCCOORD,null,null,null,null,null,null,null,null,17393,at Intersection,11561,['at Intersection' 'not at intersection' nan],2,object,95
+TRAFFCTL,null,null,null,null,null,null,null,null,17454,control,9033,['no control' 'control' nan],2,object,34
+VISIBILITY,null,null,null,null,null,null,null,null,17470,Clear,15069,"['Clear' 'Rain' 'Other' 'Snow' 'Strong wind' 'Freezing Rain'
+ 'Fog, Mist, Smoke, Dust' 'Drifting Snow' nan]",8,object,18
+LIGHT,null,null,null,null,null,null,null,null,17488,Daylight,10032,"['Dark' 'Dusk' 'Daylight' 'Dark, artificial' 'Dawn' 'Dusk, artificial'
+ 'Dawn, artificial' 'Daylight, artificial' 'Other']",9,object,0
+RDSFCOND,null,null,null,null,null,null,null,null,17465,Dry,13985,"['Wet' 'Dry' 'Other' 'Slush' 'Ice' 'Loose Snow' 'Packed Snow'
+ 'Spilled liquid' 'Loose Sand or Gravel' nan]",9,object,23
+INVAGE,null,null,null,null,null,null,null,null,17488,unknown,2587,"['50 to 54' '15 to 19' '55 to 59' '20 to 24' 'unknown' '45 to 49'
+ '30 to 34' '35 to 39' '25 to 29' '40 to 44' '70 to 74' '60 to 64'
+ '10 to 14' '75 to 79' '5 to 9' '85 to 89' '0 to 4' '65 to 69' '80 to 84'
+ 'Over 95' '90 to 94']",21,object,0
+INJURY,null,null,null,null,null,null,null,null,15877,None,6662,['Major' 'Minor' nan 'None' 'Minimal' 'Fatal'],5,object,1611
+DRIVACT,null,null,null,null,null,null,null,null,8822,Not Normal,4786,[nan 'Normal' 'Not Normal'],2,object,8666
+DRIVCOND,null,null,null,null,null,null,null,null,8819,Normal,5603,[nan 'Normal' 'Not Normal'],2,object,8669
+PEDESTRIAN,null,null,null,null,null,null,null,null,7079,Yes,7079,[nan 'Yes'],1,object,10409
+CYCLIST,null,null,null,null,null,null,null,null,1827,Yes,1827,[nan 'Yes'],1,object,15661
+AUTOMOBILE,null,null,null,null,null,null,null,null,15860,Yes,15860,['Yes' nan],1,object,1628
+MOTORCYCLE,null,null,null,null,null,null,null,null,1482,Yes,1482,[nan 'Yes'],1,object,16006
+TRUCK,null,null,null,null,null,null,null,null,1060,Yes,1060,[nan 'Yes'],1,object,16428
+TRSN_CITY_VEH,null,null,null,null,null,null,null,null,1069,Yes,1069,[nan 'Yes'],1,object,16419
+EMERG_VEH,null,null,null,null,null,null,null,null,43,Yes,43,[nan 'Yes'],1,object,17445
+PASSENGER,null,null,null,null,null,null,null,null,6621,Yes,6621,['Yes' nan],1,object,10867
+SPEEDING,null,null,null,null,null,null,null,null,2441,Yes,2441,['Yes' nan],1,object,15047
+AG_DRIV,null,null,null,null,null,null,null,null,9039,Yes,9039,['Yes' nan],1,object,8449
+REDLIGHT,null,null,null,null,null,null,null,null,1453,Yes,1453,[nan 'Yes'],1,object,16035
+ALCOHOL,null,null,null,null,null,null,null,null,762,Yes,762,['Yes' nan],1,object,16726
+DISABILITY,null,null,null,null,null,null,null,null,475,Yes,475,[nan 'Yes'],1,object,17013
