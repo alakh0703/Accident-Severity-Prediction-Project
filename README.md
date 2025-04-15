@@ -33,11 +33,6 @@ This project centers on the utilization of the KSI (Killed or Seriously Injured)
 ## Model Training
 - Details on model training can be found in the 'final' directory.
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature_branch`.
-3. Commit your changes: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature_branch`.
-5. Open a pull request.
+
 
 
