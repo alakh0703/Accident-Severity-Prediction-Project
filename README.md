@@ -31,7 +31,7 @@ This project centers on the utilization of the KSI (Killed or Seriously Injured)
 - The KSI dataset is included in the 'final' directory.
 
 ## Model Training
-- Details on model training can be found in the 'final' directory..
+- Details on model training can be found in the 'final' directory.
 
 
 
